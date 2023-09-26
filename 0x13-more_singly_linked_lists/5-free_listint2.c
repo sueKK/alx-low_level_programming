@@ -1,8 +1,8 @@
 #include <stdlib.h>
-#include "lists.h" // Make sure to include the appropriate header file
+#include "lists.h"
 
 /**
- * free_listint2 - This Function Frees a listint_t list and sets the head to NULL.
+ * free_listint2 - This Function list and sets the head to NULL.
  * @head: This a pointer to a pointer to the head of the list.
  */
 
@@ -15,9 +15,9 @@ return;
 
 while (*head != NULL)
 {
- current = *head;
- *head = (*head)->next;
- free(current);
+current = *head;
+*head = (*head)->next;
+free(current);
 }
 }
 
